@@ -1,0 +1,96 @@
+<html>
+    <head>
+      <title>PROJECTS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+          <style>
+            body {
+                  position: relative; 
+                }
+          </style>
+        </head>
+        <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <h3>PROJECTS</h3>
+        <hr>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="http://127.0.0.1:5500/profile.html" button type="button" class="btn btn-light">Back</a>
+              </li>
+              <div class="topics">
+                <style>
+                  .topics{
+                    text-align: left;
+                  }
+                </style>
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Saltus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Background Subtraction of Video Frames</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Multiplayer Quiz using Socket Programming</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+          
+          <h1><div class="spinner-border text-primary"></div>   Saltus</h1>
+          <p>ALternative Hadoop</p>
+          <p>Created a system(Saltus) to tackle the volume of big data that is getting generated, right at the source which helps 
+            to avoid over-accumulation of data. Working implementation of DRIFE architecture for analyzing the content in the data.
+            Mainly focused on implementing the 'v-pat' architecture that aims data reduction for its video identification operations. 
+            Built usinjg Artificial intelligence and Convolution Neural networks.</p>
+            <p>Big Data processing and storage is one of the major issues to be addressed in this current era of increasing use of digital infrastructure. 
+              In this paper, a novel method to tackle the issue of Big Data processing and a better technique to ’store what is only 
+              required’ is proposed. The key idea of this paper is to propose and discuss a possible architecture to store and process 
+              Big data using the concepts of Artificial Intelligence and Neural Networks. The paper introduces the processing technique 
+              called DRIFE and storage files called CFS. The main ideology of Saltus is to tackle the volume of big Data that is getting 
+              generated, right at the source which helps to avoid over accumulation of data over time.</p>
+        </div>
+
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+          <h1><div class="spinner-border text-dark"></div>     Subtraction of Video Frames</h1>
+          <p>The project was to perform background subtraction on videos using three methods namely frame differencing, Gaussian model and K-Nearest neighbors. When MSE and
+            PSNR values were regarded as evaluation metrics, it showed that the KNN algorithm slightly outperformed the other methods.
+            Video subtraction on video frames is a technique used to detect changes between two or more video frames. The technique involves subtracting the pixel values of one frame from another frame to obtain a difference image.</p>
+
+            <p>The difference image contains the pixels that have changed between the two frames, which can be used to identify moving objects, changes in lighting, or other changes that have occurred between the frames.</p>
+            
+            <p>To perform video subtraction, the following steps can be taken:</p>
+            
+            Convert the video frames to grayscale to simplify the process.<br>
+          
+            
+            Select two frames that are close in time.<br>
+
+            Subtract the pixel values of one frame from the other frame.<br>
+
+            Threshold the resulting difference image to obtain a binary image of the changes.<br>
+
+            Apply morphological operations, such as erosion and dilation, to remove noise and smooth the binary image.<br>
+
+            Repeat the process for subsequent frames to detect changes over time.<br>
+
+            Video subtraction can be a useful technique in various applications, such as surveillance systems, traffic monitoring, and motion analysis. However, it can also be prone to errors and false positives, so it should 
+            be used in conjunction with other techniques and algorithms to improve its accuracy.<br>
+        </div>
+
+            <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+              <h1><div class="spinner-border text-danger"></div>     Multiplayer Quiz using Socket Programming</h1>
+              <p>A multiplayer quiz game in a KBC show format is implemented in this project. The quiz can have any number of users. The game starts once maximum number of players have
+                joined .TCP/IP was used to create the application stack. Python was chosen, due to it easy to code nature.</p>
+              <p>A socket program is a computer program that uses sockets, a set of programming interfaces for sending and receiving data over a network. Sockets provide a way for processes to communicate with each other on the same or different computers.</p>
+            </div>
+          
+          
+        
+    </body>  
+    
+</html>

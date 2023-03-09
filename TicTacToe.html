@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe Game</title>
+	<style>
+		
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			padding: 10px;
+			border: 2px solid burlywood;
+		}
+		.box {
+			flex: 1 0 30%;
+			height: 90px;
+			margin: 5px;
+			background-color: lightblue;
+			text-align: center;
+			font-size: 50px;
+			line-height: 90px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: all .2s ease-in-out;
+		}
+		.box:hover {
+			background-color: blanchedalmond;
+		}
+		.x {
+            font-style: inherit;
+			color: white;
+		}
+		.o {
+            font-style: inherit;
+			color: black;
+		}
+        .title{
+            text-align: center;
+            color: black;
+            background-color: blanchedalmond;
+        }
+	</style>
+</head>
+<div class="title">
+<h1 >Tic Tac Toe</h1>
+</div>
+
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+    
+
+	<script>
+		const boxes = document.querySelectorAll('.box');
+		let xTurn = true;
+		let gameOver = false;
+		let winner = '';
+
+		function handleClick(e) {
+			if (gameOver) return;
+			if (e.target.textContent !== '') return;
+
+			e.target.textContent = xTurn ? 'X' : 'O';
+			e.target.classList.add(xTurn ? 'x' : 'o');
+			xTurn = !xTurn;
+
+			checkWinner();
+		}
+
+		function checkWinner() {
+			const winningCombos = [
+				[0,1,2],
+				[3,4,5],
+				[6,7,8],
+				[0,3,6],
+				[1,4,7],
+				[2,5,8],
+				[0,4,8],
+				[2,4,6]
+			];
+
+			for (let combo of winningCombos) {
+				const [a,b,c] = combo;
+				if (boxes[a].textContent !== '' &&
+					boxes[a].textContent === boxes[b].textContent &&
+					boxes[b].textContent === boxes[c].textContent) {
+					gameOver = true;
+					winner = boxes[a].textContent;
+					break;
+				}
+			}
+
+			if (gameOver) {
+				alert(`Game Over! ${winner} Wins!`);
+			} else if (![...boxes].some(box => box.textContent === '')) {
+				gameOver = true;
+				alert("Game Over! It's a tie!");
+			}
+		}
+
+		boxes.forEach(box => box.addEventListener('click', handleClick));
+	</script>
+</body>
+</html>
