@@ -44,12 +44,6 @@ nav ul li a {
 .pro h1 {
     font-size: 4vw;
     color: darkslateblue;
-    margin-bottom: 10px;
-}
-
-.pro h2 {
-    font-size: 3.5vw;
-    color: darkslateblue;
     margin-bottom: 20px;
 }
 
@@ -120,10 +114,6 @@ span {
         margin-left: 5%;
     }
 
-    .pro h1, .pro h2 {
-        font-size: 5vw;
-    }
-
     .images {
         width: 50%;
         right: 50px;
@@ -135,7 +125,7 @@ span {
         margin: 10px 10px;
     }
 
-    .pro h1, .pro h2 {
+    .pro h1 {
         font-size: 6vw;
     }
 
@@ -165,7 +155,7 @@ span {
         margin-top: 15%;
     }
 
-    .pro h1, .pro h2 {
+    .pro h1 {
         font-size: 8vw;
     }
 
