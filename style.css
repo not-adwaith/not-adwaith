@@ -84,7 +84,7 @@ span{
 .images  .pic{
     height: 80%;
     position: absolute;
-    left: 53%;
+    left: 45%;
     bottom: 40;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
@@ -96,5 +96,5 @@ span{
 }
 
 .images:hover .pic{
-    left: 45%;
+    left: 38%;
 }
